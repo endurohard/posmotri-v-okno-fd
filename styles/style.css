@@ -173,10 +173,8 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   overflow-y: auto;
   block-size: 298px;
-  padding: 0;
 }
 
 .content__list::-webkit-scrollbar {
@@ -198,11 +196,15 @@ ol {
 
 .content__list-item {
   padding-inline: 2px;
-  margin: 0;
 }
 
-.content__list-item:has(.more-button) {
+.content__list-item:not(:first-child) {
+  margin-block-start: 30px;
+}
+
+.content__list > li:has(.more-button) {
   padding-inline: 0;
+  margin-block-start: 30px;
 }
 
 .content__card-link {
