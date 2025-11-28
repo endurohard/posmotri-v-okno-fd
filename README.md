@@ -26,7 +26,7 @@
 ## Структура проекта
 
 ```
-posmotri_v_okno/
+posmotri-v-okno-fd/
 ├── fonts/              # Шрифты проекта
 ├── scripts/            # JavaScript файлы
 ├── styles/             # CSS файлы
